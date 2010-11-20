@@ -42,6 +42,7 @@ class Execute(Resource):
     group = ResourceArgument()
     returns = ResourceArgument(default=0)
     timeout = ResourceArgument()
+    interpreter = ResourceArgument()
 
     actions = Resource.actions + ["run"]
 
